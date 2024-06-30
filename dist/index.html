@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/vite-DcBtz0py.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index-BKxNtZK6.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DJCdJaBT.css">
+    <title>Geokatalis Plannio</title>
+    <script type="module" crossorigin src="/assets/index-CVka8Hsj.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-GjsBAIBQ.css">
   </head>
   <body class="bg-gray-100">
     <div id="app"></div>
@@ -18,7 +18,7 @@
       <img class="w-56 h-14" src="/assets/logo-plannio-AvKDaUDr.svg" alt="">
      </div>
      <!-- Menu items -->
-     <div id="menu-items bg-gray-100">
+     <div id="navbar" class="hidden lg:block">
       <a href="#" class="menu-item mx-7 font-semibold">Community</a>
       <a href="#" class="menu-item mx-7 font-semibold">Pricing</a>
       <a href="#" class="menu-item mx-7 font-semibold">Geokatalis V</a>
@@ -31,19 +31,55 @@
     </header>
 
     <!-- Main Content Body -->
-    <div class="container px-0 flex flex-col items-center py-20 w-[1120px] mx-auto mt-[104px] bg-bgPutih">
+    <div class="px-0 mb-48 flex flex-col gap-[40px] items-center py-20 max-w-[1120px] mx-auto mt-[104px] bg-bgPutih">
       <!-- tagline -->
       <h1 class="font-semibold text-3xl text-center">Upload SHP jadi WebGIS<br>se-simpel upload<br>konten di sosmed</h1>
       <!-- mockup multiplatform -->
       <div>
-        <img src="/assets/mockup-BpmwFm6m.png" alt="mockup">
+        <img class="max-w-3xl w-full" src="/assets/mockup-BpmwFm6m.png" alt="mockup">
       </div>
       <!-- Fitur-fitur plannio -->
-      <div class="flex justify-between">
+      <div class="flex flex-col lg:flex-row text-center  md:text-justify items-center lg:items-start px-10 gap-8 justify-between">
         <!-- fitur1 -->
-        
+         <div class="flex-col py-10 items-center justify-center">
+           <img class="object-fill mx-auto my-1.5 md:w-auto max-h-[400px] pb-4" src="/assets/fitur1-DcvANOjI.png" alt="gambar1">
+           <h3 class="my-1.5 text-2xl font-semibold">
+            Beragam Style Basemap
+           </h3>
+           <div class="container">
+             <p class="my-1.5 font-opensans font-light text-sm">
+               Setiap peta di PLANNIO dilengkapi dua tampilan tema peta dasar, yaitu tema cerah (bright) dan tema gelap (satellite). Data peta dasar mutakhir, melihat peta manapun di PLANNIO dengan tampalan foto satelit resolusi tinggi dari berbagai sumber.
+             </p>
+           </div>
+         </div>
+        <!-- fitur2 -->
+        <div class="flex-col py-10 items-center justify-center">
+          <img class="object-fill mx-auto my-1.5 md:w-auto max-h-[400px] pb-4" src="/assets/fitur2-BUrvXkZJ.png" alt="gambar1">
+          <h3 class="my-1.5 text-2xl font-semibold">
+            Topografi Tiga Dimensi (3D)
+          </h3>
+          <p class="my-1.5 font-opensans font-light text-sm">
+            Web aplikasi PLANNIO dapat menampilkan seluruh peta yang ada dengan topografi tampak tiga dimensi (3D) yang memudahkan dalam observasi ketinggian tempat dari tiap tiap bagian yang ada pada peta.
+          </p>
+        </div>
+        <!-- fitur2 -->
+        <div class="flex-col py-10 items-center justify-center">
+          <img class="object-fill mx-auto my-1.5 md:w-auto max-h-[400px] pb-4" src="/assets/fitur2-BUrvXkZJ.png" alt="gambar1">
+          <h3 class="my-1.5 text-2xl font-semibold">
+            Berbagi Peta Multiplatform
+          </h3>
+          <p class="my-1.5 font-opensans font-light text-sm">
+            Berbagi informasi spasial menjadi sangat mudah dengan PLANNIO. Bagikan informasi spasial teraktual kepada siapa saja di WhatsApp, Facebook, Instagram, Twitter, LinkedIn, dan lain-lain
+          </p>
+        </div>
       </div>
+      
     </div>
+
+    <!-- Footer -->
+     <div class="container text-center p-8">
+      <h2>ini footer</h2>
+     </div>
     
   </body>
 </html>
