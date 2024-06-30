@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/u9042131//public_html/
+    - export DEPLOYPATH=/home/u9042131//public_html/ui-plannio.geokatalis.com
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
