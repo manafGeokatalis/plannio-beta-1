@@ -5,7 +5,7 @@ import Beranda from '../pages/beranda.js';
 
 const routes = {
     '/': Landing,
-    '/beranda': Beranda,
+    '/beranda': Beranda
     // '/contact': Contact
 };
 
