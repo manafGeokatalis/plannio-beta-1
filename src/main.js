@@ -1,9 +1,17 @@
-import './style.css'
-import javascriptLogo from '../javascript.svg'
-import viteLogo from '../vite.svg'
-import { setupCounter } from './counter.js'
+// main.js
+import './style.css';
+import { navigateTo } from './routes.js';
+import { router } from './routes.js';
 
-document.querySelector('#app').innerHTML = `
-`
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.addEventListener('click', (event) => {
+        if (event.target.matches('[data-link]')) {
+            event.preventDefault();
+            const url = event.target.getAttribute('href');
+            navigateTo(url);
+        }
+    });
 
-setupCounter(document.querySelector('#counter'))
+    // Set the initial route
+    router();
+});
