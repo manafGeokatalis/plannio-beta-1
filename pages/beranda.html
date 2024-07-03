@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                colors: {
+                    bgHijau: '#D9FFED',
+                    bgBiru: '#C3DCEE',
+                    bgPutih: '#FFFFFF',
+                    bgAbu: '#EFEFEF',
+                    solidHitam: '#000000',
+                    solidDarkAbu: '#4C4C4C',
+                    solidAbu: '#666666',
+                    solidHijau: '#33B679',
+                    solidBiru: '#4B96CC',
+                    solidMerah: '#F15F5F',
+                    solidWarning: '#CAA33D',
+                    briHijau: '#87DEB5',
+                    briBiru: '#88B9DD',
+                    briAbu: '#B3B3B3',
+                    briMerah: '#F58A8A',
+                    briWarning: '#F4BF37'
+                },
+                fontFamily: {
+                    sans: ['Quicksand', 'sans-serif'],
+                    opensans: ['Heebo', 'sans-serif'],
+                }
+            }
+          }
+        }
+      </script>
+        <style type="text/tailwindcss">
+            @layer utilities {
+                .btnHijau {
+                    @apply font-semibold py-1 px-6 rounded-full text-base text-white bg-solidHijau hover:bg-briHijau shadow-md hover:shadow-lg duration-300;
+                    }
+
+                .btnBiru {
+                    @apply font-semibold py-1 px-6 rounded-full text-base text-white bg-solidBiru hover:bg-briBiru shadow-md hover:shadow-lg duration-300;
+                    }
+
+                .btnMerah {
+                    @apply font-semibold py-1 px-6 rounded-full text-base text-white bg-solidMerah hover:bg-briMerah shadow-md hover:shadow-lg duration-300;
+                    }
+
+                .btnAbu {
+                    @apply font-semibold py-1 px-6 rounded-full text-base text-white bg-solidAbu hover:bg-briAbu shadow-md hover:shadow-lg duration-300;
+                    }
+
+                .btnInactive {
+                    @apply font-semibold py-1 px-6 rounded-full text-base text-briAbu bg-bgAbu cursor-not-allowed duration-300;
+                    }
+                            }
+          </style>
+          <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <!-- Menu Header -->
+<header class="fixed top-0 left-0 right-0 bg-white flex justify-between items-center py-2 md:px-3 px-6 shadow-md">
+    <!-- Logo Plannio -->
+    <div id="logo-plannio" href="/" data-link>
+      <img class="w-[121px] h-[30px]" src="../images/logo-plannio.svg" alt="">
+    </div>
+
+    <!-- Nav Container -->
+    <div class="nav-container flex p-0 gap-14">    
+      <!-- Nav Menu       -->
+      <div class="flex nav-menu p-0 gap-8">            
+        <button href="/" data-link class="font-medium text-base text-solidDarkAbu hover:text-solidBiru duration-200"> HOME </button>
+        <button class="font-medium text-base text-solidDarkAbu  hover:text-solidBiru duration-200"> My Geoportal </button>
+      </div>
+      <!-- Billing and Profile -->
+      <div class="flex p-0 gap-8">            
+        <button class="font-medium text-base text-solidDarkAbu hover:text-solidBiru duration-200"> Billing </button>
+        <button class="flex py-1 px-2 gap-2 items-center font-medium text-base text-solidDarkAbu  hover:text-solidBiru duration-200"> Abdul Manaf <img src="../images/user-icon.png" alt="" class="h-6 w-6"> </button>
+      </div>
+    </div>
+  </header>
+<!-- Body content -->
+ <div id="bodycontent" class="flex w-full pt-16 px-6 gap-4">
+    <!-- Side Menu -->
+     <div class="flex flex-col items-center gap-6 w-[202px]">           
+      <button class="btnHijau">Make a Map</button>            
+      <button class="btnBiru w-full">Explore Maps</button>
+      <button class="btnBiru w-full">Followed</button>
+      <button class="btnBiru w-full">Notifications</button>
+      <button class="btnBiru w-full">Messages</button>            
+     </div>
+    <!-- Content Beranda -->
+     <div class="flex flex-col w-full items-center">
+        <!-- Content Item -->
+        <div class="flex flex-col px-5 py-4 gap-3 rounded-lg bg-bgAbu w-full max-w-[1120px]">
+          <!-- profile -->
+          <div class="flex items-center gap-2">
+            <img class="w-14 h-14 object-center" src="../images/user1.png" alt="">
+            <h3 class="font-bold text-base">Andi Abdul Manaf</h3>
+          </div>
+          <!-- Content Links and Status -->
+           <div class="flex gap-6">
+            <img class="h-24 w-44 rounded-md" src="../images/map-thumbnail.png" alt="">
+            <!-- Map Status -->
+             <div class="flex flex-col items-start">
+               <p class="font-semibold py-1 px-5 rounded-full text-sm text-solidHijau bg-bgHijau">Map</p>
+               <h2 class="font-bold text-lg">Peta rencana Tata Ruang Kabupaten Manggarai Barat</h2>
+               <p class="font-opensans text-solidDarkAbu text-xs">Last Updated :2 months ago</p>
+             </div>
+           </div>
+           <!-- Content Engage -->
+            <div class="flex w-full border-y border-solidAbu h-12 px-28 justify-between">
+              <!-- likes -->
+               <button class="flex items-center gap-1 text-sm font-bold text-solidAbu">
+                <img src="../images/likes.svg" alt="">
+                20 Likes
+               </button>
+               <!-- Comments -->
+               <button class="flex items-center gap-1 text-sm font-bold text-solidAbu">
+                <img src="../images/comments.svg" alt="">
+                4 Comments
+               </button>
+               <!-- Share -->
+               <button class="flex items-center gap-1 text-sm font-bold text-solidAbu">
+                <img src="../images/share.svg" alt="">
+                Share
+               </button>
+            </div>
+        </div>
+     </div>
+ </div>
+</body>
+</html>

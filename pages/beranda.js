@@ -66,7 +66,7 @@ export default function Beranda() {
                      </button>
                      <!-- Comments -->
                      <button class="flex items-center gap-1 text-sm font-bold text-solidAbu">
-                      <img src${comments} alt="">
+                      <img src=${comments} alt="">
                       4 Comments
                      </button>
                      <!-- Share -->
@@ -75,7 +75,6 @@ export default function Beranda() {
                       Share
                      </button>
                   </div>
-
               </div>
            </div>
        </div>
