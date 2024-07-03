@@ -16,13 +16,13 @@ export default {
         solidAbu: '#666666',
         solidHijau: '#33B679',
         solidBiru: '#4B96CC',
-        solidMerah: '#F15F5Fx',
+        solidMerah: '#F15F5F',
         solidWarning: '#CAA33D',
         briHijau: '#87DEB5',
         briBiru: '#88B9DD',
         briAbu: '#B3B3B3',
         briMerah: '#F58A8A',
-        briWarning: '#F4BF37',
+        briWarning: '#F4BF37'
       },
       fontFamily: {
         sans: ['Quicksand', 'sans-serif'],

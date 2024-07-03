@@ -4,3 +4,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btnHijau {
+    @apply font-semibold py-1 px-6 rounded-full text-base text-white bg-solidHijau hover:bg-briHijau shadow-md hover:shadow-lg duration-300;
+}
+
+.btnBiru {
+    @apply font-semibold py-1 px-6 rounded-full text-base text-white bg-solidBiru hover:bg-briBiru shadow-md hover:shadow-lg duration-300;
+}
+
+.btnMerah {
+    @apply font-semibold py-1 px-6 rounded-full text-base text-white bg-solidMerah hover:bg-briMerah shadow-md hover:shadow-lg duration-300;
+}
+
+.btnAbu {
+    @apply font-semibold py-1 px-6 rounded-full text-base text-white bg-solidAbu hover:bg-briAbu shadow-md hover:shadow-lg duration-300;
+}
+
+.btnInactive {
+    @apply font-semibold py-1 px-6 rounded-full text-base text-briAbu bg-bgAbu cursor-not-allowed duration-300;
+}

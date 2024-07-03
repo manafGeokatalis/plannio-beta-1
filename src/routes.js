@@ -1,6 +1,6 @@
 // routes.js
-import Landing from '../pages/landing.js';
-import Beranda from '../pages/beranda.js';
+// import Landing from '../pages/landing.js';
+// import Beranda from '../pages/beranda.js';
 // import Contact from './pages/contact.js';
 
 const routes = {
