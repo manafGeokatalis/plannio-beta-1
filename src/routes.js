@@ -41,6 +41,7 @@ export function router() {
 export function navigateTo(url) {
     window.history.pushState({}, '', url);
     router();
+    window.scrollTo(0,0)
 }
 
 window.addEventListener('popstate', router);
