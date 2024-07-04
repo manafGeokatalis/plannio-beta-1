@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fade In and Slide Up</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .slide-up {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div style="height: 150vh;">Scroll down</div>
+
+  <div id="animateElement" class="opacity-0 transform translate-y-10 transition-opacity transition-transform duration-500">
+    <!-- Your content here -->
+    This element will fade in and slide up!
+  </div>
+
+  <div style="height: 150vh;"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const target = document.getElementById("animateElement");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            target.classList.add("slide-up");
+            observer.unobserve(target);  // Stop observing after the first intersection
+          }
+        });
+      }, { threshold: 0.1 });
+
+      observer.observe(target);
+    });
+  </script>
+</body>
+</html>

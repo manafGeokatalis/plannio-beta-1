@@ -4,6 +4,7 @@ import userone from "../images/user1.png";
 import like from "../images/likes.svg";
 import comments from "../images/comments.svg";
 import share from "../images/share.svg";
+import userIcon from "../images/user-icon.png";
 
 export default function Beranda() {
     return `
@@ -24,7 +25,7 @@ export default function Beranda() {
             <!-- Billing and Profile -->
             <div class="flex p-0 gap-8">            
               <button class="font-medium text-base text-solidDarkAbu hover:text-solidBiru duration-200"> Billing </button>
-              <button class="flex py-1 px-2 gap-2 items-center font-medium text-base text-solidDarkAbu  hover:text-solidBiru duration-200"> Abdul Manaf <img src="./images/user-icon.png" alt="" class="h-6 w-6"> </button>
+              <button class="flex py-1 px-2 gap-2 items-center font-medium text-base text-solidDarkAbu  hover:text-solidBiru duration-200"> Abdul Manaf <img src=${userIcon} alt="" class="h-6 w-6"> </button>
             </div>
           </div>
         </header>
