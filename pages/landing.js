@@ -9,7 +9,7 @@ import logoGeokatalis from '../images/logo-geokatalis.png';
 export default function Landing() {
     return `
         <!-- Menu Header -->
-<header class="fixed top-0 left-0 right-0 bg-bgPutih flex justify-between items-center py-6 md:px-20 px-6 shadow-lg">
+<header class="fixed top-0 left-0 right-0 bg-bgPutih flex justify-between items-center py-6 md:px-20 px-6 shadow-lg z-10">
     <!-- Logo Plannio -->
    <div id="logo-plannio" href="/" data-link>
     <img class="w-56 h-14" src=${logoPlannio} alt="">
@@ -29,15 +29,15 @@ export default function Landing() {
   <!-- Main Content Body -->
   <div class="px-0 mb-48 flex flex-col gap-[40px] items-center py-20 max-w-[1120px] mx-auto mt-[104px] bg-bgPutih">
     <!-- tagline -->
-    <h1 class="font-semibold text-3xl text-center">Upload SHP jadi WebGIS<br>se-simpel upload<br>konten di sosmed</h1>
+    <h1 class="animate-fade-slide font-semibold text-3xl text-center">Upload SHP jadi WebGIS<br>se-simpel upload<br>konten di sosmed</h1>
     <!-- mockup multiplatform -->
     <div>
-      <img class="max-w-3xl w-full" src=${mockup} alt="mockup">
+      <img class="animate-fade-slide max-w-3xl w-full" src=${mockup} alt="mockup">
     </div>
     <!-- Fitur-fitur plannio -->
     <div class="flex flex-col lg:flex-row gap-8 px-10">        
        <!-- fitur1 -->
-      <div class="container flex-col py-10 items-center justify-center">
+      <div class="animate-fade-slide container flex-col py-10 items-center justify-center">
         <img class="object-fill mx-auto my-1.5 max-h-[400px] pb-4" src=${fiturone} alt="gambar1">
         <h3 class="my-1.5 text-2xl font-semibold text-left">
           Beragam Style Basemap
@@ -47,7 +47,7 @@ export default function Landing() {
         </p>
       </div>
       <!-- fitur2 -->
-      <div class="container flex-col py-10 items-center justify-center">
+      <div class="animate-fade-slide delay-300 container flex-col py-10 items-center justify-center">
         <img class="object-fill mx-auto my-1.5 max-h-[400px] pb-4" src=${fiturTwo} alt="gambar2">
         <h3 class="my-1.5 text-2xl font-semibold text-left">
           Topografi Tiga Dimensi (3D)
@@ -57,7 +57,7 @@ export default function Landing() {
         </p>
       </div>
       <!-- fitur3 -->
-      <div class="container flex-col py-10 items-center justify-center">
+      <div class="animate-fade-slide delay-700 container flex-col py-10 items-center justify-center">
         <img class="object-fill mx-auto my-1.5 max-h-[400px] pb-4" src=${fiturTri} alt="gambar1">
         <h3 class="my-1.5 text-2xl font-semibold text-left">
           Berbagi Peta Multiplatform

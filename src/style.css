@@ -24,3 +24,13 @@
 .btnInactive {
     @apply font-semibold py-1 px-6 rounded-full text-base text-briAbu bg-bgAbu cursor-not-allowed duration-300;
 }
+
+.animate-fade-slide {
+    opacity: 0;
+    transform: translateY(220px);
+    transition: opacity 1000ms, transform 1000ms;
+    }
+.slide-up {
+    transform: translateY(0);
+    opacity: 1;
+    }
